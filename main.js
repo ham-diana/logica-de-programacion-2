@@ -15,7 +15,7 @@ function convertirCelsius(){
     }
 
     let kelvin = (celsius + 273.15).toFixed(2);
-    let fahrenheit = ((1.8*celsius) + 36).toFixed(2);
+    let fahrenheit = ((celsius*9/5) + 32).toFixed(2);
 
     kelvinSpan.textContent = kelvin;
     fahrenheitSpan.textContent = fahrenheit;
